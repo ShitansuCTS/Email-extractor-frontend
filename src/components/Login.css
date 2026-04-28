@@ -1,0 +1,138 @@
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* Subtract navbar height */
+  padding: 20px;
+}
+
+.login-card {
+  display: flex;
+  background-color: var(--cream-bg); /* Cream Background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 900px;
+}
+
+.illustration-panel {
+  flex: 1;
+  background-color: #EFE8D8; /* Slightly darker cream for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-panel {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-header h2 {
+  margin-top: 0;
+  color: var(--navy-bg); /* Navy heading */
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  transition: border 0.3s;
+}
+
+.input-group:focus-within {
+  border-color: var(--gold-accent);
+}
+
+/* --- DELETED .input-icon FROM HERE --- */
+
+.form-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--navy-bg);
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-action {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--navy-bg);
+  color: var(--cream-bg);
+}
+
+.btn-primary:hover {
+  background-color: #1e2035;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--navy-bg);
+  border: 2px solid var(--navy-bg);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(39, 42, 70, 0.1);
+}
+
+.error-banner {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+  }
+  .illustration-panel {
+    display: none; /* Hide image on mobile for space */
+  }
+  .form-panel {
+    padding: 30px;
+  }
+}
+
+/* --- PREMIUM ANIMATION CSS --- */
+.input-group:focus-within lord-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.input-group lord-icon {
+  transition: transform 0.3s ease;
+}
+
+/* --- DELETED .animated-icon FROM HERE --- */
