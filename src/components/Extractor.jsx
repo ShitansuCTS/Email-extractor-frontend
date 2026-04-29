@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 import './Extractor.css';
 
@@ -383,6 +384,8 @@ function Extractor() {
 
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 }

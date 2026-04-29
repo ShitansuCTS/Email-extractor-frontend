@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+import Footer from './Footer';
 
 // const baseUrl="https://babluprajapati3019-emailextractortool.hf.space"
 const baseUrl = import.meta.env.VITE_PYTHON_SERVER_ADDRESS;
@@ -44,6 +45,7 @@ function Login() {
   };
 
   return (
+    <>
     <div className="login-page-wrapper">
       <div className="login-card">
         
@@ -141,6 +143,8 @@ function Login() {
 
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
