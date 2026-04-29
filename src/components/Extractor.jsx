@@ -5,7 +5,8 @@ import Navbar from './Navbar';
 import './Extractor.css';
 
 // const baseUrl="https://babluprajapati3019-emailextractortool.hf.space"
-const baseUrl="http://localhost:8000"
+const baseUrl = import.meta.env.VITE_PYTHON_SERVER_ADDRESS;
+
 
 function Extractor() {
   const [file, setFile] = useState(null);
